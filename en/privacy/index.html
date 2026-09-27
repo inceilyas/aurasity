@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Aurasity</title>
+<meta name="description" content="Aurasity's privacy policy: what stays on your device, what Aura sends to Google, and how you can delete your data.">
+<link rel="icon" type="image/png" href="../../assets/favicon.png">
+<link rel="canonical" href="https://inceilyas.github.io/aurasity/en/privacy/">
+<link rel="alternate" hreflang="tr" href="https://inceilyas.github.io/aurasity/privacy/">
+<link rel="alternate" hreflang="en" href="https://inceilyas.github.io/aurasity/en/privacy/">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">
+      <img src="../../assets/logo.png" alt="Aurasity logo" width="32" height="32">
+      Aurasity
+    </a>
+    <nav class="top-nav" aria-label="Site navigation">
+      <a href="../privacy/">Privacy</a>
+      <a href="../terms/">Terms</a>
+      <a href="../support/">Support</a>
+      <a class="lang-switch" href="../../privacy/" hreflang="tr">TR</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <h1>Privacy Policy</h1>
+  <p class="updated"><strong>Last updated:</strong> September 27, 2026</p>
+
+  <div class="summary-box">
+    <p><strong>Quick summary</strong></p>
+    <ul>
+      <li>The <strong>Focus, Tasks, Routine, and Profile</strong>
+        sections don't require an account, work without an internet
+        connection, and never send your data to any server. We don't run
+        a server for these — this data stays only on your phone, and we
+        never see it.</li>
+      <li><strong>Aura</strong> is the in-app AI chat companion. The
+        message you write to Aura is sent to <strong>Google's Gemini
+        model</strong> so a reply can be generated. Your name, email, or
+        account details are <strong>never</strong> sent.</li>
+      <li>The first time you open Aura, a one-time consent screen
+        explains what this means; you can withdraw that consent at any
+        time from Profile → Settings.</li>
+      <li><strong>No microphone is used</strong>, no audio is recorded.
+        There are no ads, no ad tracking (ATT), and your data is never
+        sold to third parties.</li>
+      <li>We collect usage statistics (Firebase Analytics) and crash
+        reports (Firebase Crashlytics); neither is linked to your
+        identity, and neither carries content — your task titles and
+        chat messages never appear in these records.</li>
+      <li>You can delete your data at any time via
+        <strong>Profile → Settings → Delete all my data</strong>, or by
+        removing the app from your device entirely.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who is the data controller</h2>
+  <p>
+    This app ("<strong>Aurasity</strong>", under the "Misely Lab" brand) is
+    developed and operated by <strong>Mehmet İlyas İnce</strong> (a
+    private individual, Türkiye). Under Turkish Law No. 6698 on the
+    Protection of Personal Data ("<strong>KVKK</strong>"), he is the data
+    controller.
+  </p>
+  <p><strong>Contact:</strong> miselylab@gmail.com</p>
+  <p>
+    This section fulfills the disclosure obligation under KVKK Article
+    10: the identity of the data controller, the data processed, the
+    purpose of processing, the legal basis, to whom and for what purpose
+    it is transferred, and how to exercise the rights listed in Article
+    11 are explained below.
+  </p>
+
+  <h2>2. What data stays only on your device</h2>
+  <p>
+    The following data is stored <strong>only on your phone</strong>; it
+    is never sent to us or to any other server, because we don't have a
+    server it could be sent to:
+  </p>
+  <ul>
+    <li>Your profile test answers, axis scores, and profile (persona) result</li>
+    <li>Your tasks, subtasks, priorities, and notes</li>
+    <li>Your routines, habits, and daily check-ins</li>
+    <li>The duration and outcome of your focus sessions</li>
+    <li>The visible history of your conversation with Aura, and the
+      notes Aura keeps to remember you (see "What Aura remembers"
+      below for details)</li>
+  </ul>
+
+  <h2>3. Aura — the AI chat companion</h2>
+  <p>
+    Aura is a chat feature you can use to talk about everyday concerns;
+    it offers advice and tries to lift your mood. It <strong>does not
+    provide a diagnosis</strong> and does not give medical or
+    psychological advice (see the Terms of Use for more detail).
+  </p>
+
+  <h3>What gets sent</h3>
+  <p>
+    When you write a message to Aura, the following is sent to
+    <strong>Google's Gemini model</strong> (via Firebase AI Logic, using
+    the <code>gemini-3.5-flash-lite</code> model) so a reply can be
+    generated:
+  </p>
+  <ul>
+    <li>The text of your message</li>
+    <li>A short summary of that day's task, routine, and focus status
+      (e.g. "3 tasks carried over to today", "two items of the morning
+      routine are checked") — so the chat has context</li>
+    <li>Short notes Aura remembers from previous conversations (see
+      below)</li>
+  </ul>
+  <p>
+    <strong>What is never sent:</strong> your name, email address,
+    account ID, device identifier, or any information that directly
+    identifies you. Google does not link these messages to your
+    identity.
+  </p>
+
+  <h3>Messages carrying a crisis signal never reach the model</h3>
+  <p>
+    If a message is detected as carrying a self-harm signal, the chat
+    <strong>stops immediately</strong> and the message is <strong>never
+    sent to Google.</strong> Instead, a fixed, pre-written support card
+    is shown (a suggestion to call your local emergency number and to
+    reach out to a professional). This turn is never recorded anywhere.
+  </p>
+
+  <h3>What Google does with my messages</h3>
+  <p>
+    This app is configured to use the <strong>paid service</strong> tier
+    of the Gemini API (the Firebase project is on the Blaze plan). Under
+    Google's Gemini API Additional Terms of Service, for paid services:
+  </p>
+  <ul>
+    <li>Google <strong>does not use</strong> the prompts you send or the
+      model's responses <strong>to improve its own products or to train
+      its models.</strong></li>
+    <li>This content is retained <strong>only for a limited period, and
+      solely to detect and prevent abuse</strong>; it is not subject to
+      human review.</li>
+    <li>The situation is different on the free (trial) tier — there,
+      content may be used by Google to improve its products and may be
+      subject to human review. This app is set up to run on the paid
+      tier in production.</li>
+  </ul>
+  <p>
+    <em>(Source:
+    <a href="https://ai.google.dev/gemini-api/terms" rel="nofollow noopener" target="_blank">Gemini API Additional Terms of Service</a>)</em>
+  </p>
+
+  <h3>What Aura remembers</h3>
+  <p>
+    So you don't have to reintroduce yourself every time, Aura keeps two
+    kinds of persistent traces. Both live <strong>only on your
+    phone</strong>, in a plain text file (<code>Aura/hafiza.md</code>) —
+    they never reach us, and are only sent to Google as context on the
+    next turn of the conversation:
+  </p>
+  <ul>
+    <li><strong>Persistent notes:</strong> short sentences Aura judges
+      "worth remembering" (up to 20).</li>
+    <li><strong>Session summaries:</strong> which day you talked, the
+      sentence that opened that conversation, and what the app actually
+      did during it (up to 8).</li>
+  </ul>
+  <p>
+    <strong>The raw text of your conversation (individual messages) is
+    not stored persistently on your phone</strong> — it only stays in
+    memory while that session is active, and is lost when you close the
+    app. What is kept persistently are the short notes and summaries
+    above.
+  </p>
+  <p>
+    <strong>Profile → Settings → Delete all my data</strong> deletes this
+    file too (see "Deleting your data") and withdraws the data consent
+    you gave Aura; the consent screen appears again the next time you
+    open Aura.
+  </p>
+
+  <h3>One-time consent</h3>
+  <p>
+    The first time you open Aura, a consent screen summarizing the above
+    appears. You cannot use Aura without agreeing to it. You can
+    withdraw your consent at any time via <strong>Profile →
+    Settings</strong>; when you do, the Aura tab closes.
+  </p>
+
+  <h2>4. What data reaches us / third parties</h2>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Where it goes</th><th>Purpose</th><th>Linked to identity?</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Your Aura message + context summary + memory notes</td>
+        <td>Google (Gemini API, Firebase AI Logic)</td>
+        <td>Generating a reply</td>
+        <td>Not linked to identity</td>
+      </tr>
+      <tr>
+        <td>Usage events (e.g. "a focus session was started")</td>
+        <td>Google Firebase Analytics</td>
+        <td>Understanding/improving the product</td>
+        <td>Not linked to identity, not used for ads/tracking</td>
+      </tr>
+      <tr>
+        <td>Purchase event (which product was bought, e.g. "monthly subscription")</td>
+        <td>Google Firebase Analytics</td>
+        <td>Measuring purchases</td>
+        <td>Not linked to identity; carries no price or payment information</td>
+      </tr>
+      <tr>
+        <td>Crash/diagnostic data (device model, OS, stack trace)</td>
+        <td>Google Firebase Crashlytics</td>
+        <td>Finding and fixing bugs</td>
+        <td>Not linked to identity</td>
+      </tr>
+      <tr>
+        <td>App integrity verification (App Check)</td>
+        <td>Google Firebase App Check</td>
+        <td>Protecting against fraudulent/abusive requests</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Subscription payment</td>
+        <td>Apple (App Store)</td>
+        <td>Collecting payment</td>
+        <td>Linked to your Apple account; we never see your card details</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>Usage statistics and crash reports carry no content.</strong>
+    Your task titles, routine names, or anything you write to Aura
+    <strong>never</strong> enter these records — in the code, these
+    events are defined to carry only fixed names and numeric fields.
+  </p>
+
+  <h3>International transfer</h3>
+  <p>
+    Google's servers are located outside Türkiye (primarily in the US).
+    The data going to Google in the table above is therefore considered
+    <strong>transferred abroad</strong> (KVKK Article 9). For Aura, the
+    basis for this transfer is the <strong>explicit consent</strong> you
+    give the first time you open it. Analytics and Crashlytics are
+    necessary for the app to function and for fixing its errors; since
+    this data is not linked to your identity, its personal-data character
+    is limited, but it still falls within the scope of the same explicit
+    consent.
+  </p>
+
+  <h3>About Firebase</h3>
+  <p>
+    Firebase is Google's app infrastructure service. This app uses the
+    following Firebase products: <strong>Analytics, Crashlytics, App
+    Check.</strong> <strong>Firebase Auth and Firestore are not
+    used</strong> — meaning none of your tasks, routines, habits, or chat
+    data is written to a Firebase database; all of it stays on your
+    phone.
+  </p>
+  <p>
+    <em>(Source:
+    <a href="https://firebase.google.com/support/privacy" rel="nofollow noopener" target="_blank">Firebase Privacy and Security</a>
+    — Crashlytics data begins to be removed from live and backup systems
+    within 90 days of collection.)</em>
+  </p>
+
+  <h2>5. Health data and special-category data</h2>
+  <p>
+    Aurasity is not a medical app and <strong>does not provide a
+    diagnosis.</strong> The profile test and Aura are tools for
+    self-awareness and everyday support; they do not substitute for a
+    medical evaluation.
+  </p>
+  <p>
+    The axes behind the profile test, and the topics you talk about with
+    Aura, may occasionally touch on sensitive subjects such as attention,
+    mood, or habits. We treat this content with the sensitivity of
+    <strong>special-category personal data</strong>: it is processed only
+    with your explicit consent, is never used for advertising, and is
+    never sold or shared with third parties for marketing purposes.
+  </p>
+
+  <h2>6. Deleting your data</h2>
+  <p>
+    <strong>Profile → Settings → Delete all my data</strong> permanently
+    deletes the following, and this action cannot be undone:
+  </p>
+  <ul>
+    <li>Your profile test result and persona</li>
+    <li>Your tasks and subtasks</li>
+    <li>Your routines and habits</li>
+    <li>Your focus session records</li>
+    <li>Your setting preferences</li>
+    <li>Aura's memory file (<code>hafiza.md</code>): its persistent notes
+      and session summaries</li>
+    <li>The data consent you gave Aura — the consent screen appears
+      again the next time you open Aura</li>
+  </ul>
+  <p>
+    ⚠️ This button <strong>does not delete the weekly message
+    counter</strong>: it's kept separately to prevent abuse and carries
+    no content — only which week it is and your message count for that
+    week, no personal content.
+  </p>
+  <p>
+    Aura messages already sent to Google are, under the paid-service
+    terms, retained only for a limited period solely for abuse detection,
+    and are automatically removed once that period ends (see Section 3).
+  </p>
+
+  <h2>7. How to exercise your rights (KVKK Article 11)</h2>
+  <p>
+    Under Article 11 of KVKK, you may apply to the data controller to:
+  </p>
+  <ol>
+    <li>Learn whether your personal data is being processed,</li>
+    <li>Request information about it if it has been processed,</li>
+    <li>Learn the purpose of processing and whether it is used in
+      accordance with that purpose,</li>
+    <li>Know the third parties to whom it is transferred, domestically or
+      abroad,</li>
+    <li>Request correction if it has been processed incompletely or
+      incorrectly,</li>
+    <li>Request its deletion or destruction under the conditions set out
+      in Article 7 of KVKK,</li>
+    <li>Request that the above correction/deletion actions be notified to
+      the third parties to whom the data was transferred,</li>
+    <li>Object to a result that arises to your detriment solely from
+      automated analysis of your processed data,</li>
+    <li>Request compensation for damages incurred due to unlawful
+      processing</li>
+  </ol>
+  <p>
+    You may submit your request, along with information that verifies
+    your identity, in writing to <strong>miselylab@gmail.com</strong>.
+    Your request will be answered within the period required by KVKK (at
+    most 30 days).
+  </p>
+
+  <h2>8. Children</h2>
+  <p>
+    Aurasity is designed for the age group indicated by its App Store age
+    rating. We do not knowingly collect data from anyone under 13; if we
+    become aware that we have collected data from a user under 13, we
+    will delete it.
+  </p>
+
+  <h2>9. Changes</h2>
+  <p>
+    This policy may be updated. When a material change occurs (for
+    example, a change to the scope of Aura's data sharing), you will be
+    notified within the app and — if required — your consent will be
+    requested again.
+  </p>
+
+  <h2>10. Contact</h2>
+  <p>
+    For questions, requests, and to exercise your rights:
+    <strong>miselylab@gmail.com</strong>
+  </p>
+  <p>Support: <a href="../support/">inceilyas.github.io/aurasity/en/support/</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>© 2026 Mehmet İlyas İnce (Misely Lab)</div>
+    <div class="footer-links">
+      <a href="../privacy/">Privacy</a><span>·</span>
+      <a href="../terms/">Terms</a><span>·</span>
+      <a href="../support/">Support</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

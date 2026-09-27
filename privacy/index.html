@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Aurasity</title>
+<meta name="description" content="Aurasity uygulamasının gizlilik politikası: hangi veriler cihazda kalır, Aura ile Google'a ne gönderilir, verilerini nasıl silersin.">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="canonical" href="https://inceilyas.github.io/aurasity/privacy/">
+<link rel="alternate" hreflang="tr" href="https://inceilyas.github.io/aurasity/privacy/">
+<link rel="alternate" hreflang="en" href="https://inceilyas.github.io/aurasity/en/privacy/">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">
+      <img src="../assets/logo.png" alt="Aurasity logosu" width="32" height="32">
+      Aurasity
+    </a>
+    <nav class="top-nav" aria-label="Site menüsü">
+      <a href="../privacy/">Gizlilik</a>
+      <a href="../terms/">Şartlar</a>
+      <a href="../support/">Destek</a>
+      <a class="lang-switch" href="../en/privacy/" hreflang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <h1>Gizlilik Politikası</h1>
+  <p class="updated"><strong>Son güncelleme:</strong> 27 Eylül 2026</p>
+
+  <div class="summary-box">
+    <p><strong>Kısa özet</strong></p>
+    <ul>
+      <li><strong>Odak, Görevler, Rutin ve Profil</strong> bölümleri hesap
+        gerektirmez, internet olmadan çalışır ve verilerini hiçbir sunucuya
+        göndermez. Bizim bir sunucumuz yok; bu veriler yalnızca telefonunda
+        durur, biz onları hiç görmeyiz.</li>
+      <li><strong>Aura</strong>, uygulama içi yapay zekâ sohbet
+        yardımcısıdır. Aura'ya yazdığın mesaj, cevap üretilebilmesi için
+        <strong>Google'ın Gemini modeline</strong> gönderilir. Adın,
+        e-postan ya da hesap bilgin hiçbir zaman gönderilmez.</li>
+      <li>Aura'yı ilk kez açtığında sana ne olduğunu anlatan tek seferlik
+        bir onay ekranı çıkar; onayı istediğin an Profil → Ayarlar'dan
+        geri çekebilirsin.</li>
+      <li><strong>Mikrofon kullanılmaz</strong>, ses kaydedilmez. Reklam
+        yok, reklam takibi (ATT) yok, verilerin üçüncü taraflara satılmaz.</li>
+      <li>Kullanım istatistikleri (Firebase Analytics) ve çökme raporları
+        (Firebase Crashlytics) topluyoruz; ikisi de kimliğinle
+        ilişkilendirilmez ve içerik taşımaz — görev başlıkların, sohbet
+        mesajların bu kayıtlarda hiç yer almaz.</li>
+      <li>Verilerini istediğin an <strong>Profil → Ayarlar → Tüm verimi
+        sil</strong> ile ya da uygulamayı cihazından kaldırarak tamamen
+        silebilirsin.</li>
+    </ul>
+  </div>
+
+  <h2>1. Veri sorumlusu kimdir</h2>
+  <p>
+    Bu uygulama ("<strong>Aurasity</strong>", "Misely Lab" markasıyla)
+    <strong>Mehmet İlyas İnce</strong> tarafından geliştirilmekte ve
+    işletilmektedir (gerçek kişi, Türkiye). 6698 sayılı Kişisel Verilerin
+    Korunması Kanunu ("<strong>KVKK</strong>") uyarınca veri sorumlusu odur.
+  </p>
+  <p><strong>İletişim:</strong> miselylab@gmail.com</p>
+  <p>
+    Bu bölüm, KVKK madde 10 uyarınca aydınlatma yükümlülüğünü yerine
+    getirir: veri sorumlusunun kimliği, işlenen veri, işleme amacı, hukuki
+    sebep, kimlere ve hangi amaçla aktarıldığı ve madde 11'de sayılan
+    hakların nasıl kullanılacağı aşağıda anlatılmıştır.
+  </p>
+
+  <h2>2. Hangi veriler yalnızca cihazında kalır</h2>
+  <p>
+    Aşağıdaki veriler <strong>yalnızca telefonunda</strong> saklanır; bize
+    ya da başka bir sunucuya hiçbir şekilde gönderilmez, çünkü gönderilecek
+    bir sunucumuz yok:
+  </p>
+  <ul>
+    <li>Profil testi cevapların, eksen puanların ve profil (persona) sonucun</li>
+    <li>Görevlerin, alt adımların, önceliklerin ve notların</li>
+    <li>Rutinlerin, alışkanlıkların ve günlük işaretlemelerin</li>
+    <li>Odak seanslarının süresi ve sonucu</li>
+    <li>Aura ile aranda geçen sohbetin görüntülendiği hâli ve Aura'nın seni
+      hatırlamak için tuttuğu notlar (aşağıda "Aura ne hatırlar" bölümünde
+      ayrıntısı var)</li>
+  </ul>
+
+  <h2>3. Aura — yapay zekâ sohbet yardımcısı</h2>
+  <p>
+    Aura, günlük dertlerini anlatabildiğin, tavsiye veren ve moral vermeye
+    çalışan bir sohbet özelliğidir. <strong>Tanı koymaz</strong>, tıbbi ya
+    da psikolojik tavsiye vermez (ayrıntı için Kullanım Şartları).
+  </p>
+
+  <h3>Ne gönderiliyor</h3>
+  <p>
+    Aura'ya bir mesaj yazdığında, cevap üretebilmesi için şunlar
+    <strong>Google'ın Gemini modeline</strong> (Firebase AI Logic
+    üzerinden, <code>gemini-3.5-flash-lite</code> modeli) gönderilir:
+  </p>
+  <ul>
+    <li>Yazdığın mesajın metni</li>
+    <li>O günkü görev, rutin ve odak durumunun kısa bir özeti (örn. "3
+      görev bugüne kaldı", "sabah rutini iki maddesi işaretli") — sohbetin
+      bağlamı olsun diye</li>
+    <li>Aura'nın önceki konuşmalardan hatırladığı kısa notlar (aşağıya
+      bakınız)</li>
+  </ul>
+  <p>
+    <strong>Gönderilmeyenler:</strong> adın, e-posta adresin, hesap
+    kimliğin, cihaz kimliğin ya da seni doğrudan tanımlayan hiçbir bilgi.
+    Google, bu mesajları senin kimliğinle ilişkilendirmez.
+  </p>
+
+  <h3>Kriz sinyali taşıyan mesajlar modele hiç gitmez</h3>
+  <p>
+    Mesajın kendine zarar verme sinyali taşıdığı algılanırsa, sohbet
+    <strong>hemen durur</strong> ve mesaj <strong>Google'a hiç
+    gönderilmez.</strong> Bunun yerine sabit, önceden yazılmış bir destek
+    kartı gösterilir (acil durumda 112, bir uzmana başvurma önerisi). Bu
+    tur hiçbir yerde kaydedilmez.
+  </p>
+
+  <h3>Google mesajlarımı ne yapıyor</h3>
+  <p>
+    Bu uygulama Gemini API'nin <strong>ücretli hizmet</strong> katmanını
+    kullanacak şekilde yapılandırılmıştır (Firebase projesi Blaze
+    planında). Google'ın Gemini API Ek Kullanım Şartları'na göre ücretli
+    hizmetlerde:
+  </p>
+  <ul>
+    <li>Google, gönderdiğin istemleri (prompt) ve modelin cevaplarını
+      <strong>kendi ürünlerini geliştirmek ya da modellerini eğitmek için
+      kullanmaz.</strong></li>
+    <li>Bu içerik, <strong>yalnızca kötüye kullanımı tespit etmek ve
+      önlemek amacıyla, sınırlı bir süre</strong> saklanır; insan gözden
+      geçirmesine konu edilmez.</li>
+    <li>Ücretsiz (deneme) katmanda durum farklıdır — orada içerik
+      Google'ın ürün geliştirmesinde kullanılabilir ve insan gözden
+      geçirmesinden geçebilir. Bu uygulama yayında ücretli katmanda
+      çalışacak şekilde kurulmuştur.</li>
+  </ul>
+  <p>
+    <em>(Kaynak:
+    <a href="https://ai.google.dev/gemini-api/terms" rel="nofollow noopener" target="_blank">Gemini API Ek Kullanım Şartları</a>)</em>
+  </p>
+
+  <h3>Aura ne hatırlar</h3>
+  <p>
+    Aura, seni her seferinde baştan tanıtmak zorunda kalmaman için iki tür
+    kalıcı iz tutar. İkisi de <strong>yalnızca telefonunda</strong>, düz
+    bir metin dosyasında (<code>Aura/hafiza.md</code>) durur — bize
+    ulaşmaz, yalnızca sohbetin bir sonraki turunda Google'a bağlam olarak
+    gönderilir:
+  </p>
+  <ul>
+    <li><strong>Kalıcı notlar:</strong> Aura'nın "bunu hatırlamaya değer"
+      bulduğu kısa cümleler (en fazla 20 tane).</li>
+    <li><strong>Oturum özetleri:</strong> hangi gün konuştuğun, o
+      konuşmayı açan cümlen ve o sırada uygulamanın gerçekten yaptığı
+      işler (en fazla 8 tane).</li>
+  </ul>
+  <p>
+    <strong>Sohbetin ham metni (tek tek mesajlar) telefonunda kalıcı
+    olarak saklanmaz</strong> — yalnızca o oturum sürerken bellekte durur,
+    uygulamayı kapattığında kaybolur. Kalıcı olarak tutulan, yukarıdaki
+    kısa notlar ve özetlerdir.
+  </p>
+  <p>
+    <strong>Profil → Ayarlar → Tüm verimi sil</strong>, bu dosyayı da siler
+    (bkz. "Verilerini silme") ve Aura'ya verdiğin veri onayını geri alır;
+    Aura'yı yeniden açtığında onay ekranı tekrar çıkar.
+  </p>
+
+  <h3>Tek seferlik onay</h3>
+  <p>
+    Aura'yı ilk kez açtığında, yukarıda anlatılanları özetleyen bir onay
+    ekranı çıkar. Onaylamadan Aura'yı kullanamazsın. Verdiğin onayı
+    istediğin an <strong>Profil → Ayarlar</strong> üzerinden geri
+    çekebilirsin; geri çektiğinde Aura sekmesi kapanır.
+  </p>
+
+  <h2>4. Hangi veriler bize / üçüncü taraflara ulaşır</h2>
+  <table>
+    <thead>
+      <tr><th>Veri</th><th>Nereye gider</th><th>Amaç</th><th>Kiminle ilişkilendirilir</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Aura mesajın + bağlam özeti + hafıza notları</td>
+        <td>Google (Gemini API, Firebase AI Logic)</td>
+        <td>Cevap üretmek</td>
+        <td>Kimlikle ilişkilendirilmez</td>
+      </tr>
+      <tr>
+        <td>Kullanım olayları (örn. "bir odak seansı başlatıldı")</td>
+        <td>Google Firebase Analytics</td>
+        <td>Ürünü anlamak/geliştirmek</td>
+        <td>Kimlikle ilişkilendirilmez, reklam/izleme için kullanılmaz</td>
+      </tr>
+      <tr>
+        <td>Satın alma olayı (hangi ürünün alındığı, örn. "aylık abonelik")</td>
+        <td>Google Firebase Analytics</td>
+        <td>Satın alımı ölçmek</td>
+        <td>Kimlikle ilişkilendirilmez; fiyat ya da ödeme bilgisi içermez</td>
+      </tr>
+      <tr>
+        <td>Çökme/teşhis verisi (cihaz modeli, işletim sistemi, hata izi)</td>
+        <td>Google Firebase Crashlytics</td>
+        <td>Hataları bulup düzeltmek</td>
+        <td>Kimlikle ilişkilendirilmez</td>
+      </tr>
+      <tr>
+        <td>Uygulama bütünlüğü doğrulaması (App Check)</td>
+        <td>Google Firebase App Check</td>
+        <td>Sahte/kötüye kullanılan isteklere karşı korunmak</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Abonelik ödemesi</td>
+        <td>Apple (App Store)</td>
+        <td>Ödemeyi tahsil etmek</td>
+        <td>Apple hesabınla; biz kart bilgini hiç görmeyiz</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <strong>Kullanım istatistiklerinin ve çökme raporlarının içeriği
+    yoktur.</strong> Görev başlıkların, rutin adların, Aura'ya yazdığın
+    hiçbir metin bu kayıtlara <strong>hiçbir zaman</strong> girmez — kodda
+    bu olaylar yalnızca sabit isim ve sayısal alan taşıyacak şekilde
+    tanımlıdır.
+  </p>
+
+  <h3>Yurt dışına aktarım</h3>
+  <p>
+    Google'ın sunucuları Türkiye dışında (başta ABD olmak üzere) bulunur.
+    Yukarıdaki tabloda Google'a giden veriler bu yüzden <strong>yurt
+    dışına aktarılmış</strong> sayılır (KVKK madde 9). Aura için bu
+    aktarımın dayanağı, Aura'yı ilk açtığında verdiğin <strong>açık
+    rızadır</strong>. Analytics ve Crashlytics, uygulamanın işlevini
+    yerine getirmesi ve hatalarının giderilmesi için gereklidir; bu
+    veriler kimlikle ilişkilendirilmediği için kişisel veri niteliği
+    sınırlıdır, yine de aynı açık rızanın kapsamındadır.
+  </p>
+
+  <h3>Firebase hakkında</h3>
+  <p>
+    Firebase, Google'ın uygulama altyapısı hizmetidir. Bu uygulamada şu
+    Firebase ürünleri kullanılır: <strong>Analytics, Crashlytics, App
+    Check.</strong> <strong>Firebase Auth ve Firestore kullanılmaz</strong>
+    — yani hiçbir görev, rutin, alışkanlık ya da sohbet verin bir Firebase
+    veritabanına yazılmaz; hepsi telefonunda kalır.
+  </p>
+  <p>
+    <em>(Kaynak:
+    <a href="https://firebase.google.com/support/privacy" rel="nofollow noopener" target="_blank">Firebase Gizlilik ve Güvenlik</a>
+    — Crashlytics verileri toplandıktan sonra 90 gün içinde canlı ve yedek
+    sistemlerden kaldırılmaya başlanır.)</em>
+  </p>
+
+  <h2>5. Sağlık verisi ve özel nitelikli veri</h2>
+  <p>
+    Aurasity bir tıbbi uygulama değildir ve <strong>tanı koymaz.</strong>
+    Profil testi ve Aura, öz-farkındalık ve günlük destek amaçlı
+    araçlardır; tıbbi değerlendirmenin yerine geçmez.
+  </p>
+  <p>
+    Profil testinin arkasındaki eksenler ve Aura'yla konuştuğun konular
+    zaman zaman dikkat, ruh hâli ya da alışkanlıklar gibi hassas
+    başlıklara değinebilir. Bu içeriği <strong>özel nitelikli kişisel
+    veri</strong> hassasiyetiyle ele alıyoruz: yalnızca açık rızanla
+    işlenir, reklam amacıyla kullanılmaz, üçüncü taraflara satılmaz ya da
+    pazarlama için paylaşılmaz.
+  </p>
+
+  <h2>6. Verilerini silme</h2>
+  <p>
+    <strong>Profil → Ayarlar → Tüm verimi sil</strong>, şunları kalıcı
+    olarak siler ve bu işlem geri alınamaz:
+  </p>
+  <ul>
+    <li>Profil testi sonucun ve persona'n</li>
+    <li>Görevlerin ve alt adımların</li>
+    <li>Rutinlerin ve alışkanlıkların</li>
+    <li>Odak seans kayıtların</li>
+    <li>Ayar tercihlerin</li>
+    <li>Aura'nın hafıza dosyası (<code>hafiza.md</code>): kalıcı notlar ve
+      oturum özetleri</li>
+    <li>Aura'ya verdiğin veri onayı — Aura'yı yeniden açtığında onay
+      ekranı tekrar çıkar</li>
+  </ul>
+  <p>
+    ⚠️ Bu düğme <strong>haftalık mesaj sayacını silmez</strong>: kötüye
+    kullanımı önlemek için ayrı tutulur ve içeriği yoktur — yalnızca
+    hangi haftada olduğun ve o haftaki mesaj sayın saklanır, kişisel
+    içerik taşımaz.
+  </p>
+  <p>
+    Google'a gönderilmiş olan Aura mesajları, ücretli hizmet şartları
+    uyarınca zaten yalnızca kötüye kullanım tespiti için sınırlı bir süre
+    tutulur ve o sürenin sonunda kendiliğinden kaldırılır (bkz. Bölüm 3).
+  </p>
+
+  <h2>7. Haklarını nasıl kullanırsın (KVKK madde 11)</h2>
+  <p>
+    KVKK'nın 11. maddesi uyarınca, veri sorumlusuna başvurarak:
+  </p>
+  <ol>
+    <li>Kişisel verinin işlenip işlenmediğini öğrenme,</li>
+    <li>İşlenmişse buna ilişkin bilgi talep etme,</li>
+    <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını
+      öğrenme,</li>
+    <li>Yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+    <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
+    <li>KVKK'nın 7. maddesindeki şartlar çerçevesinde silinmesini veya yok
+      edilmesini isteme,</li>
+    <li>Yukarıdaki düzeltme/silme işlemlerinin aktarıldığı üçüncü
+      kişilere bildirilmesini isteme,</li>
+    <li>İşlenen verilerin münhasıran otomatik sistemlerle analiz edilmesi
+      sonucunda aleyhine bir sonuç ortaya çıkmasına itiraz etme,</li>
+    <li>Kanuna aykırı işleme sebebiyle zarara uğraman hâlinde zararın
+      giderilmesini talep etme</li>
+  </ol>
+  <p>haklarına sahipsin.</p>
+  <p>
+    Başvurunu <strong>miselylab@gmail.com</strong> adresine, kimliğini
+    doğrulayacak bilgilerle birlikte yazılı olarak iletebilirsin.
+    Başvurun KVKK'nın öngördüğü süre (en geç 30 gün) içinde yanıtlanır.
+  </p>
+
+  <h2>8. Çocuklar</h2>
+  <p>
+    Aurasity, App Store'daki yaş derecelendirmesinde belirtilen yaş grubu
+    için tasarlanmıştır. Bilerek 13 yaş altından veri toplamayız; 13 yaş
+    altı bir kullanıcıdan veri topladığımızı fark edersek bu veriyi
+    sileriz.
+  </p>
+
+  <h2>9. Değişiklikler</h2>
+  <p>
+    Bu politika güncellenebilir. Önemli bir değişiklik olduğunda (örneğin
+    Aura'nın veri paylaşımının kapsamı değişirse) uygulama içinde
+    bilgilendirme yapılır ve — gerekiyorsa — onayın yeniden istenir.
+  </p>
+
+  <h2>10. İletişim</h2>
+  <p>
+    Sorular, başvurular ve haklarını kullanmak için:
+    <strong>miselylab@gmail.com</strong>
+  </p>
+  <p>Destek: <a href="../support/">inceilyas.github.io/aurasity/support/</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>© 2026 Mehmet İlyas İnce (Misely Lab)</div>
+    <div class="footer-links">
+      <a href="../privacy/">Gizlilik</a><span>·</span>
+      <a href="../terms/">Şartlar</a><span>·</span>
+      <a href="../support/">Destek</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
